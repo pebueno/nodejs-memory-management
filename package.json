@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-memory-management",
+  "version": "1.0.0",
+  "description": "Node.js program to practice memory management",
+  "main": "app.js",
+  "scripts": {
+    "start" : "node app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:pebueno/nodejs-memory-management.git"
+  },
+  "keywords": [
+    "memory",
+    "management",
+    "node.js",
+    "javascript"
+  ],
+  "author": "Pedro Ivo Bueno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pebueno/nodejs-memory-management/issues"
+  },
+  "homepage": "https://github.com/pebueno/nodejs-memory-management#readme"
+}
