@@ -47,3 +47,4 @@ app.listen(port, () => {
 
 
 // Execute with: node --trace_gc app.js
+// and, with: node --inspect app.js
