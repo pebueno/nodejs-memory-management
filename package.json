@@ -4,7 +4,7 @@
   "description": "Node.js program to practice memory management",
   "main": "app.js",
   "scripts": {
-    "start" : "node app",
+    "start": "node app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/pebueno/nodejs-memory-management/issues"
   },
-  "homepage": "https://github.com/pebueno/nodejs-memory-management#readme"
+  "homepage": "https://github.com/pebueno/nodejs-memory-management#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }

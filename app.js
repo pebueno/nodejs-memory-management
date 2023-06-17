@@ -1,18 +1,49 @@
-const process = require('process');
+const express = require('express');
 
-console.log(process);
-var usage = process.memoryUsage()
+const app = express();
 
-// Memory Usage value
-console.log(usage);
+const EventEmitter = require('events');
+const eventEmitter = new EventEmitter();
 
-// Printing the current time stamp
-const now = Date.now();
+let tasks = [];
 
-// Looping to delay the process for 100 milliseconds
-while (Date.now() - now < 100);
+app.get('/', function(req, res) {
+    tasks.push(function() {
+        return req.headers
+    })
 
-usage = process.memoryUsage(usage)
+    const hugeArray = new Array(100000000).fill(req)
 
-// Memory Usage by this process
-console.log(usage);
+    req.user = {
+        id: 1,
+        username: 'Inefficient User',
+        badObject: req,
+        hugeArray
+    };
+
+    // eventEmitter.on('start', () => {
+    //     console.log('Useless event emitted')
+    // })
+
+    // eventEmitter.removeListener('start')
+
+    // const resWithTimeout = 
+    setTimeout(() => {
+        res.send('Hello World!')
+    })
+
+    clearTimeout(resWithTimeout);
+});
+
+app.get('/other-url', function(req, res) {
+
+});
+
+const port = 3000;
+
+app.listen(port, () => {
+    console.log(`Example app listening on poirt ${port}`);
+});
+
+
+// Execute with: node --trace_gc app.js
